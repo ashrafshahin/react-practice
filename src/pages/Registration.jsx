@@ -67,7 +67,7 @@ const Registration = () => {
                   </div>
                   <div>
                       <p className='p-3'>Already have an account ?
-                          <span className='text-yellow-800 font-bold p-1 cursor-pointer'> Sign In</span></p>
+                          <span className='text-yellow-800 font-bold p-1 cursor-pointer'> Sign In </span></p>
                   </div>
               </div>
               <div className='md:w-1/2 '>
