@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import shahin from "../images/shahin.png"
+import { Link } from 'react-router'
 
 const Registration = () => {
     const [email, setEmail] = useState('')
@@ -67,7 +68,10 @@ const Registration = () => {
                   </div>
                   <div>
                       <p className='p-3'>Already have an account ?
-                          <span className='text-yellow-800 font-bold p-1 cursor-pointer'> Sign In </span></p>
+                          <Link to={"/login"}>
+                              <span className='text-yellow-800 font-bold p-1 cursor-pointer'> Sign In </span>
+                          </Link> 
+                      </p>
                   </div>
               </div>
               <div className='md:w-1/2 '>

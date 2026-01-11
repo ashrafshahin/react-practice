@@ -12,8 +12,7 @@ function App() {
     <>
       <div className='m-10'>
 
-        <Registration />
-        <Login />
+        
         
       </div>
       

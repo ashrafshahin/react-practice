@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import shahin from "../images/shahin.png"
+import shahin2 from "../images/shahin2.png"
+import { Link } from 'react-router'
 
 const Login = () => {
   const [email, setEmail] = useState('')
@@ -11,8 +12,6 @@ const Login = () => {
   const handleSignIn = () => {
     if (!email) {
       setEmailError('Email required')
-    } if (!password) {
-      setPasswordError('')
     } if (!password) {
       setPasswordError('please give your password')
     }
@@ -44,13 +43,16 @@ const Login = () => {
             <button className='text-red-600 font-bold cursor-pointer p-3'>Forgot Password</button>
                             <div>
             <p className='p-3'>Don’t have an account ? 
-              <span className='text-yellow-800 font-bold p-1 cursor-pointer'> Sign up</span></p>
+                <Link to={"/registration"}>
+                  <span className='text-yellow-800 font-bold p-1 cursor-pointer'> Sign up</span>
+                </Link>
+              </p>
                        </div>
           
                           </div>
                         </div>
                         <div className='md:w-1/2 '>
-                            <img src={shahin} alt="Registration Image" />
+                            <img src={shahin2} alt="Registration Image" />
                         </div>
                         
           
