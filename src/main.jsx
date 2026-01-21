@@ -11,6 +11,7 @@ import Login from './pages/Login.jsx';
 import Home from './pages/Home.jsx';
 
 import MainRoot from './components/MainRoot.jsx';
+import UseEffect from './pages/UseEffect.jsx';
 
 
 const router = createBrowserRouter([
@@ -21,6 +22,7 @@ const router = createBrowserRouter([
       { index: true, Component: Home },
       { path: "login", Component: Login },
       { path: "registration", Component: Registration },
+      { path: "useeffect", Component: UseEffect },
         
     ],
      
